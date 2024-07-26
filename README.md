@@ -74,7 +74,7 @@ gists-gone -l Unknown
 
 #### Visbility
 
-Using the `-visibility` option you can specify whether you want to delete public or private gists:
+Using the `-visibility` option you can specify whether you want to delete public or private (secret) gists:
 
 ```
 gists-gone -v private
@@ -99,7 +99,7 @@ Dates should be passed in YYYY-MM-DD format.
 
 #### Examples
 
-Deleting private gists created from 2020-01-01 onwards:
+Deleting private (secret) gists created from 2020-01-01 onwards:
 
 ```
 gists-gone -v private -dr 2020-01-01 2100-01-01
