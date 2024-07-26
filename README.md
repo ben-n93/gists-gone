@@ -4,7 +4,7 @@
      <a href="https://github.com/ben-n93/gists-gone/actions/workflows/tests.yml"><img src="https://github.com/ben-n93/gists-gone/actions/workflows/tests.yml/badge.svg" alt="Testing"></a>
       <a href="https://github.com/ben-n93/gists-gone/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/gists-gone" alt="License"></a>
     <a href="https://codecov.io/gh/ben-n93/gists-gone" ><img src="https://codecov.io/gh/ben-n93/gists-gone/graph/badge.svg?token=FO4QA8CUF5"/></a>
-    <a href="https://pypi.org/project/gists-gone/"><img src="https://img.shields.io/pypi/pyversions/geojson-shave" alt="versions"></a>
+    <a href="https://pypi.org/project/gists-gone/"><img src="https://img.shields.io/pypi/pyversions/gists-gone" alt="versions"></a>
 </p>
 
 `gists-gone` is a command-line tool that gives you more granular control over bulk deletion of your Github gists.
