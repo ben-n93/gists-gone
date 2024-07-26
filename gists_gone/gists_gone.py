@@ -40,9 +40,9 @@ def get_parser_args():
         "-v",
         "--visibility",
         type=str,
-        help="Specify whether you want to delete public or private gists.",
+        help="Specify whether you want to delete public or secret gists.",
         required=False,
-        choices=["public", "private"],
+        choices=["public", "secret"],
     )
 
     parser.add_argument(
@@ -147,7 +147,7 @@ def create_gists(json):
         if visibility:
             visibility = "public"
         else:
-            visibility = "private"
+            visibility = "secret"
 
         gist = Gist(raw_gist.get("id"), visibility, languages, date_created)
         gists.append(gist)

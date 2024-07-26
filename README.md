@@ -74,10 +74,10 @@ gists-gone -l Unknown
 
 #### Visbility
 
-Using the `-visibility` option you can specify whether you want to delete public or private (secret) gists:
+Using the `-visibility` option you can specify whether you want to delete public or secret gists:
 
 ```
-gists-gone -v private
+gists-gone -v secret
 gists-gone -v public
 ```
 
@@ -99,10 +99,10 @@ Dates should be passed in YYYY-MM-DD format.
 
 #### Examples
 
-Deleting private (secret) gists created from 2020-01-01 onwards:
+Deleting secret gists created from 2020-01-01 onwards:
 
 ```
-gists-gone -v private -dr 2020-01-01 2100-01-01
+gists-gone -v secret -dr 2020-01-01 2100-01-01
 ```
 
 Deleting Rust gists created on a particular date:

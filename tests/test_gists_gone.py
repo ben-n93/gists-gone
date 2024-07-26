@@ -177,7 +177,7 @@ def test_create_gists_works(cli_args, requests_mock, mock_gists):
     assert isinstance(gists, list)
     assert gists[0] == Gist(
         "7fea2e3837f324e5e3699917f687c862",
-        "private",
+        "secret",
         "Clojure",
         datetime(2024, 7, 12).date(),
     )
@@ -199,7 +199,7 @@ def test_filter_gists_returns_list(created_gists):
 def test_filter_gists_works_with_visibility(created_gists):
     """Test that filter_gists() works when the visibility argument is passed."""
 
-    arguments = ["private", None, None]
+    arguments = ["secret", None, None]
     gist_ids = filter_gists(arguments, created_gists)
     assert "7fea2e3837f324e5e3699917f687c862" in gist_ids
     assert "5f6258f9caae6f2c6511e926f7f623af" in gist_ids
@@ -267,7 +267,7 @@ def test_filter_works_with_dates(created_gists):
 def test_filter_works_with_multiple_arguments(created_gists):
     """Test that filter_gists works when different arguments are passed."""
 
-    arguments = ["private", ["Python"], None]
+    arguments = ["secret", ["Python"], None]
     gist_ids = filter_gists(arguments, created_gists)
     assert len(gist_ids) == 0
 
@@ -282,7 +282,7 @@ def test_filter_works_with_multiple_arguments(created_gists):
     assert "8eaee095f4b3a822127cc4fa368b4165" in gist_ids
     assert len(gist_ids) == 2
 
-    arguments = ["private", None, ["2024-07-12"]]
+    arguments = ["secret", None, ["2024-07-12"]]
     arguments[2] = parse_date_arguments(arguments[2])
     gist_ids = filter_gists(arguments, created_gists)
     assert len(gist_ids) == 2
@@ -292,7 +292,7 @@ def test_filter_works_with_multiple_arguments(created_gists):
     gist_ids = filter_gists(arguments, created_gists)
     assert len(gist_ids) == 0
 
-    arguments = ["private", ["Rust", "Clojure"], ["2024-07-12"]]
+    arguments = ["secret", ["Rust", "Clojure"], ["2024-07-12"]]
     arguments[2] = parse_date_arguments(arguments[2])
     gist_ids = filter_gists(arguments, created_gists)
     assert len(gist_ids) == 2
