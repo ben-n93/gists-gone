@@ -1,8 +1,8 @@
 <h1 align=center> gists-gone </h2>
 
 <p align="center">
-     <a href="https://github.com/ben-n93/gists-gone/actions/workflows/tests.yml"><img src="https://github.com/ben-n93/gists-gone/actions/workflows/tests.yml/badge.svg" alt="Testing"></a>
-    <a href="https://codecov.io/gh/ben-n93/gists-gone" ><img src="https://codecov.io/gh/ben-n93/gists-gone/graph/badge.svg?token=FO4QA8CUF5"/></a>
+     <a href="https://github.com/ben-nour/gists-gone/actions/workflows/tests.yml"><img src="https://github.com/ben-nour/gists-gone/actions/workflows/tests.yml/badge.svg" alt="Testing"></a>
+    <a href="https://codecov.io/gh/ben-nour/gists-gone" ><img src="https://codecov.io/gh/ben-nour/gists-gone/graph/badge.svg?token=FO4QA8CUF5"/></a>
     <a href="https://pypi.org/project/gists-gone/"><img src="https://img.shields.io/pypi/pyversions/gists-gone" alt="versions"></a>
 </p>
 
